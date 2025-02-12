@@ -5,6 +5,8 @@ import (
 	"reflect"
 	"strconv"
 
+	_ "github.com/spf13/viper/remote"
+
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )

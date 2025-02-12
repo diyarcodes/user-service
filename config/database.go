@@ -20,6 +20,8 @@ func InitDatabase() (*gorm.DB, error) {
 		config.Database.Name,
 	)
 
+	fmt.Println("Connecting to:", uri)
+
 	db, err := gorm.Open(postgres.Open(uri), &gorm.Config{})
 	if err != nil {
 		return nil, err
